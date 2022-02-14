@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&family=Lato&display=swap');
+:root{
+    --text-color:white;
+    --primary-color:#153D55;
+    --footer-2-color:#0A0909;
+    --footer-1-color:black;
+    --button-color:#2586BE;
+    --card-color:#CAC7C7;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: roboto,"sans-serif";
+    font-size:24px;
+    font-weight: 400;
+    line-height: 1.5;
+    color:var(--text-color);
+    background:#fff;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+.container{
+    padding-left:15px;
+    padding-right:15px;
+    margin-left:auto;
+    margin-right:auto;
+    width:600px;
+
+}
+
+/*---Small screen--*/
+
+@media (min-width:768px){
+    .container{
+        width:750px !important;
+    }
+
+}
+/*---medium screen--*/
+@media (min-width:992px){
+    .container{
+        width:970px !important;
+    }
+
+}
+/*---large screen--*/
+@media (min-width:1200px){
+    .container{
+        width:1170px !important;
+    }
+
+}
+
+/*--- TOP-HEADER ---*/
+
+.top-header{
+    background: black;
+    padding:20px;
+}
+.top-header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#logo p{
+font-family: Roboto Slab;
+font-style: normal;
+font-weight: bold;
+font-size: 53.5147px;
+line-height: 71px;
+
+}
+
+.links{
+    width:60%;
+}
+ .links ul {
+    list-style: none;
+    display:flex;
+    justify-content:space-between; 
+}
+.links ul li  a{
+font-family: Lato;
+font-style: italic;
+font-weight: 500;
+text-decoration: none;
+color:var(--text-color);
+letter-spacing:0.11em;
+margin-bottom: 20px;
+
+}
+
+.links ul li  a:hover{
+    padding: 15px;
+    color: #ebebeb96;
+    transition:0.5s;
+}
+
+/*-- landing --*/
+.landing {
+    background:#153D55;
+    height:calc(100vh - 111px);
+position: relative;
+}
+
+.landing  h1{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+   transform:translate(-50%, -50%);
+
+}
+
+.title-pro{
+margin-top: 30px;
+margin-bottom: 20px;
+font-family: 'Kumar One', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 53.1997px;
+line-height: 197.9%;
+/* or 105px */
+text-align: center;
+letter-spacing: 0.095em;
+color:black;
+text-shadow: 0px 4.09228px 4.09228px rgba(0, 0, 0, 0.25);
+}
+
+.card-cantainer .container{
+    background:var(--primary-color);
+    
+    width: 1231px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+#card-price{
+    display:flex;
+    flex-direction: column; 
+    width: 391.33px;
+    height: 596.47px;
+    align-items: center;
+    border-radius: 2px;
+    justify-content:center;
+}
+#card-price img{
+    width: 267px;
+    height: 361px;
+
+}
+
+.card-info{
+    padding-top:10px;
+}
+.price{
+    padding-top:10px;
+    padding-bottom: 10px;
+    color: #67C1F5;
+}
+
+.button-price{
+    width: 188.13px;
+    height: 45.81px;
+    background: var(--button-color);
+    border-radius: 22.3px;
+    border:none;
+    color:white;
+    font-family: roboto;
+    font-size:26.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button-price:hover{
+    width: 200.13px;
+    letter-spacing:10px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(29, 28, 78, 0.562);
+}
+
+.box-selling .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.box-card{
+background:#CAC7C733;
+width: 359.1px;
+height: 629.19px;
+border-radius: 24px;
+display: flex;
+justify-content:center;
+align-items: center;
+flex-direction: column;
+}
+
+.partners .container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 80%;
+    
+}
+.direction-row .partner{
+    padding-right: 20px;
+}
+.direction-row{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+
+.section-4{
+    background: var(--primary-color);
+    width:auto;
+    padding-bottom: 35px;
+    margin-bottom: 57px;
+}
+.section-4 .container h1{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 197.9%;
+/* or 71px */
+text-align: center;
+letter-spacing: 0.095em;
+
+}
+.section-4 .container p{
+font-family: Montserrat;
+font-style: italic;
+font-weight: 500;
+font-size: 15px;
+line-height: 197.9%;
+text-align: center;
+letter-spacing: 0.095em;
+}
+.section-4 .container form{
+    display: flex;
+    justify-content:center;
+    padding-bottom: 20px;
+    padding-top:10px;
+}
+form .email{
+    width:600px;
+    height:30px;
+    padding-left: 10px;
+    border: none;
+    
+}
+form .subscribe{
+    width:150px;
+    border: none;
+    text-transform: uppercase;
+    background: var(--button-color);
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*--footer--*/
+
+.footer-1{
+    width: auto;
+    height:auto;
+    background: var(--footer-1-color);
+    padding-top:20px;
+    padding-bottom:50px;
+}
+.footer-1 .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 182px;
+}
+.footer-1 h2{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 197.9%;
+}
+.footer-1 p{
+font-family: sans-serif;
+font-style:regular;
+font-weight: 400;
+font-size: 18px;
+line-height: 197.9%;
+/* or 53px */
+
+letter-spacing: 0.095em;
+
+}
+
+.footer-2{
+    width: 100%;
+    height:auto;
+    background: var(--footer-2-color);
+}
+.footer-2 p{
+    font: 400 10px "Helvetica Neue",Helvetica,sans-serif,Verdana;
+    color: #85889b;
+    padding-top: 99px;
+    padding-bottom: 106px
+}
